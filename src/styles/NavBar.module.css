@@ -1,0 +1,45 @@
+.container {
+  min-width: min(300px, 20%);
+  min-height: 100vh;
+  background-color: var(--color-background);
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+.logo {
+  width: 32px;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+  border-bottom: 1px solid var(--color-complement);
+}
+.navItemActive,
+.navItem {
+  all: unset;
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.navItemActive {
+  background-color: var(--color-complement);
+}
+.navItem:hover,
+.navItemActive:hover {
+  border: 1px solid var(--color-alternative-2);
+}
